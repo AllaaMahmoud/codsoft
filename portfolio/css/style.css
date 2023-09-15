@@ -1,0 +1,354 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(9, 103, 95);
+    color: white;
+    text-decoration: none;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 60px;
+    text-transform: uppercase;
+    animation-name: color-change;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: rgb(5, 64, 59);
+    }
+    100% {
+        color: white;
+    }
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    background-color: rgb(197, 249, 246);
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+.main .image {
+    width: 500px;
+    flex: 0 0 500px;
+}
+
+.main .image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20%;
+}
+
+.main .about h2 {
+    font-weight: bold;
+    font-size: 52px;
+    text-transform: capitalize;
+    color: rgb(7, 82, 75);
+    padding-left: 50px;
+}
+
+.main .about h5 {
+    font-size: 32px;
+    text-transform: capitalize;
+    color: rgb(9, 103, 95);
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.aboutme {
+    background-color: rgb(197, 249, 246);
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.aboutme h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 52px;
+    color: rgb(9, 103, 95);
+    padding-bottom: 30px;
+}
+
+.aboutme .txt span {
+    color: rgb(9, 103, 95);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.aboutme div {
+    margin: 0 50px;
+    border: 10px;
+    background-color: rgb(229, 251, 249);
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    height: 100%;
+    padding: 50px;
+    color: rgb(49 123 107);
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.skills {
+    background-color: rgb(197, 249, 246);
+    padding-top: 200px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    color: rgb(9, 103, 95);
+    padding-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+}
+
+.grid-item {
+    margin: 1rem;
+}
+
+.grid-container .boxes .first ul h3 {
+    padding: 20px;
+    color: rgb(9, 103, 95);
+    font-size: 38px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.skills .grid-container {
+    margin: 0 50px;
+}
+
+.skills .boxes .first {
+    border: 10px;
+    background-color: rgb(229, 251, 249);
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    height: 100%;
+    transition: transform;
+}
+
+.first:hover {
+    transform: scale(1.1);
+}
+
+.skills .boxes .first ul {
+    list-style: circle;
+    padding-left: 50px;
+    font-size: 24px;
+}
+
+.skills .boxes .first ul .stars {
+    display: flex;
+    padding-left: 200px;
+}
+
+.skills .boxes .first ul .stars i {
+    font-size: 24px;
+    color: rgb(3, 53, 58);
+}
+
+.skills .boxes .first ul li {
+    margin-bottom: 35px;
+    color: rgb(49 123 107);
+}
+
+.project h2 {
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    color: rgb(9, 103, 95);
+    padding-bottom: 30px;
+}
+
+.project {
+    background-color: rgb(197, 249, 246);
+    padding-top: 100px;
+}
+
+.project .grid-container {
+    margin: 0 50px;
+}
+
+.project .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 20px;
+}
+
+.project .box .second {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    border: 5px solid #084440;
+    border-radius: 0.5rem;
+    position: relative;
+    flex: 1 1 30rem;
+    height: 35rem;
+}
+
+.project .box .second img {
+    height: 300px;
+    width: 100%;
+}
+
+.project .box .second .content {
+    padding: 1rem;
+}
+
+.project .box .second .content h3 {
+    font-size: 2rem;
+    color: #0f4408;
+}
+
+.project .box .second .content p {
+    font-size: 1.7rem;
+    color: #0f4408;
+    padding: 1rem 0;
+    text-transform: capitalize;
+}
+
+.project .box .second .content a {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    margin-left: 22%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #084440;
+    color: white;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.project .box .second .content a:hover {
+    transform: scale(1.1);
+}
+
+.resume h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    color: rgb(9, 103, 95);
+    padding-bottom: 30px;
+}
+
+.resume {
+    background-color: rgb(197, 249, 246);
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.resume a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 500px;
+    height: 50px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: larger;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #084440;
+    color: white;
+    margin-left: 34%;
+    transition: transform .2s;
+}
+
+.resume a:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    background-color: rgb(197, 249, 246);
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+    color: rgb(9, 103, 95);
+    padding-bottom: 80px;
+}
+
+.contact .boxes .third {
+    border: 10px;
+    text-align: center;
+    padding: 100px;
+    font-size: 30px;
+    color: rgb(9, 103, 95);
+    background-color: rgb(229, 251, 249);
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    height: 21rem;
+    transition: transform;
+}
+
+.contact .boxes .third:hover {
+    transform: scale(1.1);
+}
+
+.contact .boxes .third span {
+    text-align: center;
+    font-size: 22px;
+}
+
+.foot {
+    background-color: rgb(9, 103, 95);
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    height: 60px;
+    padding: 20px;
+}
